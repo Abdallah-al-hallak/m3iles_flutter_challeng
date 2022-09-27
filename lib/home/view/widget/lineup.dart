@@ -104,7 +104,7 @@ class _LineUpPageState extends State<LineUpPage> {
                             widget: Text(
                                 pl?.startXI![0].player?.number.toString() ??
                                     ''),
-                            bottom: 30,
+                            bottom: 25,
                             left: 170),
                       if (pl?.startXI![1].player?.grid == '2:4')
                         PlayerPositioned(
@@ -113,8 +113,8 @@ class _LineUpPageState extends State<LineUpPage> {
                             widget: Text(
                                 pl?.startXI![1].player?.number.toString() ??
                                     ''),
-                            bottom: 70,
-                            left: 290),
+                            bottom: 65,
+                            left: 260),
                       for (var i = 1; i < 4; i++)
                         if (pl?.startXI![i].player?.grid == '2:3')
                           PlayerPositioned(
@@ -124,8 +124,8 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 70,
-                              left: 220),
+                              bottom: 65,
+                              left: 200),
                       for (var i = 1; i < 4; i++)
                         if (pl?.startXI![i].player?.grid == '2:2')
                           PlayerPositioned(
@@ -135,8 +135,8 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 70,
-                              left: 150),
+                              bottom: 65,
+                              left: 120),
                       for (var i = 1; i < 5; i++)
                         if (pl?.startXI![i].player?.grid == '2:1')
                           PlayerPositioned(
@@ -146,7 +146,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 70,
+                              bottom: 65,
                               left: width / 6),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '3:1')
@@ -157,7 +157,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 125,
+                              bottom: 110,
                               left: 65),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '3:2')
@@ -168,7 +168,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 125,
+                              bottom: 110,
                               left: 140),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '3:3')
@@ -179,7 +179,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 125,
+                              bottom: 110,
                               left: 200),
                       for (var i = 4; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '3:4')
@@ -190,8 +190,8 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 125,
-                              left: 265),
+                              bottom: 110,
+                              left: 255),
                       for (var i = 4; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '3:5')
                           PlayerPositioned(
@@ -201,7 +201,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 125,
+                              bottom: 110,
                               left: 320),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '4:1')
@@ -212,7 +212,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 180,
+                              bottom: 155,
                               left: 100),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '4:2')
@@ -223,7 +223,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 180,
+                              bottom: 155,
                               left: 165),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '4:3')
@@ -234,7 +234,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 180,
+                              bottom: 155,
                               left: 245),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '5:1')
@@ -245,7 +245,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 220,
+                              bottom: 200,
                               left: width / 2.3),
                       Positioned(
                           left: 20,
@@ -274,7 +274,7 @@ class _LineUpPageState extends State<LineUpPage> {
                             widget: Text(
                                 pl2?.startXI![0].player?.number.toString() ??
                                     ''),
-                            bottom: 30,
+                            bottom: 25,
                             left: 185),
                       if (pl2?.startXI![1].player?.grid == '2:4')
                         PlayerPositioned(
@@ -284,8 +284,8 @@ class _LineUpPageState extends State<LineUpPage> {
                             widget: Text(
                                 pl2?.startXI![1].player?.number.toString() ??
                                     ''),
-                            bottom: 80,
-                            left: 300),
+                            bottom: 70,
+                            left: 270),
                       for (var i = 1; i < 4; i++)
                         if (pl2?.startXI![i].player?.grid == '2:3')
                           PlayerPositioned(
@@ -295,8 +295,8 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl2?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 80,
-                              left: 220),
+                              bottom: 70,
+                              left: 200),
                       for (var i = 1; i < 4; i++)
                         if (pl2?.startXI![i].player?.grid == '2:2')
                           PlayerPositioned(
@@ -306,8 +306,8 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl2?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 80,
-                              left: 150),
+                              bottom: 70,
+                              left: 140),
                       for (var i = 1; i < 5; i++)
                         if (pl2?.startXI![i].player?.grid == '2:1')
                           PlayerPositioned(
@@ -317,7 +317,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl2?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 80,
+                              bottom: 70,
                               left: width / 6),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '3:1')
@@ -328,7 +328,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl2?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 135,
+                              bottom: 125,
                               left: 50),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '3:2')
@@ -339,7 +339,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl2?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 135,
+                              bottom: 125,
                               left: 120),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '3:3')
@@ -350,7 +350,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl2?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 135,
+                              bottom: 125,
                               left: 200),
                       for (var i = 4; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '3:4')
@@ -361,8 +361,8 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl2?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 135,
-                              left: 265),
+                              bottom: 125,
+                              left: 255),
                       for (var i = 4; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '3:5')
                           PlayerPositioned(
@@ -372,7 +372,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl2?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 135,
+                              bottom: 125,
                               left: 320),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '4:1')
@@ -383,7 +383,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl2?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 190,
+                              bottom: 170,
                               left: 100),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '4:2')
@@ -394,7 +394,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl2?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 190,
+                              bottom: 170,
                               left: 165),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '4:3')
@@ -405,7 +405,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl2?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 190,
+                              bottom: 170,
                               left: 245),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '5:1')
@@ -416,7 +416,7 @@ class _LineUpPageState extends State<LineUpPage> {
                               widget: Text(
                                   pl2?.startXI![i].player?.number.toString() ??
                                       ''),
-                              bottom: 235,
+                              bottom: 210,
                               left: width / 2.3),
                       Positioned(
                           left: 20,
