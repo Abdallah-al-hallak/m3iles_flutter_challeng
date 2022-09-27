@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ]),
-          elevation: 0,
+          elevation: 4,
           backgroundColor: Colors.white,
           centerTitle: true,
           title: const Text(

@@ -99,99 +99,153 @@ class _LineUpPageState extends State<LineUpPage> {
                       ),
                       if (pl?.startXI![0].player?.grid == '1:1')
                         PlayerPositioned(
+                            name: pl?.startXI![0].player?.name.toString() ?? '',
                             isResponse1: false,
-                            widget: Text(pl?.startXI![0].player?.name ?? ''),
+                            widget: Text(
+                                pl?.startXI![0].player?.number.toString() ??
+                                    ''),
                             bottom: 30,
-                            left: 185),
+                            left: 170),
                       if (pl?.startXI![1].player?.grid == '2:4')
                         PlayerPositioned(
+                            name: pl?.startXI![1].player?.name.toString() ?? '',
                             isResponse1: false,
-                            widget: Text(pl?.startXI![1].player?.name ?? ''),
-                            bottom: 80,
-                            left: 300),
+                            widget: Text(
+                                pl?.startXI![1].player?.number.toString() ??
+                                    ''),
+                            bottom: 70,
+                            left: 290),
                       for (var i = 1; i < 4; i++)
                         if (pl?.startXI![i].player?.grid == '2:3')
                           PlayerPositioned(
+                              name:
+                                  pl?.startXI![i].player?.name.toString() ?? '',
                               isResponse1: false,
-                              widget: Text(pl?.startXI![2].player?.name ?? ''),
-                              bottom: 80,
+                              widget: Text(
+                                  pl?.startXI![i].player?.number.toString() ??
+                                      ''),
+                              bottom: 70,
                               left: 220),
                       for (var i = 1; i < 4; i++)
                         if (pl?.startXI![i].player?.grid == '2:2')
                           PlayerPositioned(
+                              name:
+                                  pl?.startXI![i].player?.name.toString() ?? '',
                               isResponse1: false,
-                              widget: Text(pl?.startXI![3].player?.name ?? ''),
-                              bottom: 80,
+                              widget: Text(
+                                  pl?.startXI![i].player?.number.toString() ??
+                                      ''),
+                              bottom: 70,
                               left: 150),
                       for (var i = 1; i < 5; i++)
                         if (pl?.startXI![i].player?.grid == '2:1')
                           PlayerPositioned(
+                              name:
+                                  pl?.startXI![i].player?.name.toString() ?? '',
                               isResponse1: false,
-                              widget: Text(pl?.startXI![4].player?.name ?? ''),
-                              bottom: 80,
+                              widget: Text(
+                                  pl?.startXI![i].player?.number.toString() ??
+                                      ''),
+                              bottom: 70,
                               left: width / 6),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '3:1')
                           PlayerPositioned(
+                              name:
+                                  pl?.startXI![i].player?.name.toString() ?? '',
                               isResponse1: false,
-                              widget: Text(pl?.startXI![i].player?.name ?? ''),
-                              bottom: 135,
-                              left: 50),
+                              widget: Text(
+                                  pl?.startXI![i].player?.number.toString() ??
+                                      ''),
+                              bottom: 125,
+                              left: 65),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '3:2')
                           PlayerPositioned(
+                              name:
+                                  pl?.startXI![i].player?.name.toString() ?? '',
                               isResponse1: false,
-                              widget: Text(pl?.startXI![i].player?.name ?? ''),
-                              bottom: 135,
-                              left: 120),
+                              widget: Text(
+                                  pl?.startXI![i].player?.number.toString() ??
+                                      ''),
+                              bottom: 125,
+                              left: 140),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '3:3')
                           PlayerPositioned(
+                              name:
+                                  pl?.startXI![i].player?.name.toString() ?? '',
                               isResponse1: false,
-                              widget: Text(pl?.startXI![i].player?.name ?? ''),
-                              bottom: 135,
+                              widget: Text(
+                                  pl?.startXI![i].player?.number.toString() ??
+                                      ''),
+                              bottom: 125,
                               left: 200),
                       for (var i = 4; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '3:4')
                           PlayerPositioned(
+                              name:
+                                  pl?.startXI![i].player?.name.toString() ?? '',
                               isResponse1: false,
-                              widget: Text(pl?.startXI![i].player?.name ?? ''),
-                              bottom: 135,
+                              widget: Text(
+                                  pl?.startXI![i].player?.number.toString() ??
+                                      ''),
+                              bottom: 125,
                               left: 265),
                       for (var i = 4; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '3:5')
                           PlayerPositioned(
+                              name:
+                                  pl?.startXI![i].player?.name.toString() ?? '',
                               isResponse1: false,
-                              widget: Text(pl?.startXI![i].player?.name ?? ''),
-                              bottom: 135,
+                              widget: Text(
+                                  pl?.startXI![i].player?.number.toString() ??
+                                      ''),
+                              bottom: 125,
                               left: 320),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '4:1')
                           PlayerPositioned(
+                              name:
+                                  pl?.startXI![i].player?.name.toString() ?? '',
                               isResponse1: false,
-                              widget: Text(pl?.startXI![i].player?.name ?? ''),
-                              bottom: 190,
+                              widget: Text(
+                                  pl?.startXI![i].player?.number.toString() ??
+                                      ''),
+                              bottom: 180,
                               left: 100),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '4:2')
                           PlayerPositioned(
+                              name:
+                                  pl?.startXI![i].player?.name.toString() ?? '',
                               isResponse1: false,
-                              widget: Text(pl?.startXI![i].player?.name ?? ''),
-                              bottom: 190,
+                              widget: Text(
+                                  pl?.startXI![i].player?.number.toString() ??
+                                      ''),
+                              bottom: 180,
                               left: 165),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '4:3')
                           PlayerPositioned(
+                              name:
+                                  pl?.startXI![i].player?.name.toString() ?? '',
                               isResponse1: false,
-                              widget: Text(pl?.startXI![i].player?.name ?? ''),
-                              bottom: 190,
+                              widget: Text(
+                                  pl?.startXI![i].player?.number.toString() ??
+                                      ''),
+                              bottom: 180,
                               left: 245),
                       for (var i = 5; i < 11; i++)
                         if (pl?.startXI![i].player?.grid == '5:1')
                           PlayerPositioned(
+                              name:
+                                  pl?.startXI![i].player?.name.toString() ?? '',
                               isResponse1: false,
-                              widget: Text(pl?.startXI![i].player?.name ?? ''),
-                              bottom: 240,
+                              widget: Text(
+                                  pl?.startXI![i].player?.number.toString() ??
+                                      ''),
+                              bottom: 220,
                               left: width / 2.3),
                       Positioned(
                           left: 20,
@@ -214,98 +268,154 @@ class _LineUpPageState extends State<LineUpPage> {
                       //End of response 0
                       if (pl?.startXI![0].player?.grid == '1:1')
                         PlayerPositioned(
+                            name:
+                                pl2?.startXI![0].player?.name.toString() ?? '',
                             isResponse1: true,
-                            widget: Text(pl2?.startXI![0].player?.name ?? ''),
+                            widget: Text(
+                                pl2?.startXI![0].player?.number.toString() ??
+                                    ''),
                             bottom: 30,
                             left: 185),
                       if (pl2?.startXI![1].player?.grid == '2:4')
                         PlayerPositioned(
+                            name:
+                                pl2?.startXI![1].player?.name.toString() ?? '',
                             isResponse1: true,
-                            widget: Text(pl2?.startXI![1].player?.name ?? ''),
+                            widget: Text(
+                                pl2?.startXI![1].player?.number.toString() ??
+                                    ''),
                             bottom: 80,
                             left: 300),
                       for (var i = 1; i < 4; i++)
                         if (pl2?.startXI![i].player?.grid == '2:3')
                           PlayerPositioned(
+                              name: pl2?.startXI![i].player?.name.toString() ??
+                                  '',
                               isResponse1: true,
-                              widget: Text(pl2?.startXI![2].player?.name ?? ''),
+                              widget: Text(
+                                  pl2?.startXI![i].player?.number.toString() ??
+                                      ''),
                               bottom: 80,
                               left: 220),
                       for (var i = 1; i < 4; i++)
                         if (pl2?.startXI![i].player?.grid == '2:2')
                           PlayerPositioned(
+                              name: pl2?.startXI![i].player?.name.toString() ??
+                                  '',
                               isResponse1: true,
-                              widget: Text(pl2?.startXI![3].player?.name ?? ''),
+                              widget: Text(
+                                  pl2?.startXI![i].player?.number.toString() ??
+                                      ''),
                               bottom: 80,
                               left: 150),
                       for (var i = 1; i < 5; i++)
                         if (pl2?.startXI![i].player?.grid == '2:1')
                           PlayerPositioned(
+                              name: pl2?.startXI![i].player?.name.toString() ??
+                                  '',
                               isResponse1: true,
-                              widget: Text(pl2?.startXI![4].player?.name ?? ''),
+                              widget: Text(
+                                  pl2?.startXI![i].player?.number.toString() ??
+                                      ''),
                               bottom: 80,
                               left: width / 6),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '3:1')
                           PlayerPositioned(
+                              name: pl2?.startXI![i].player?.name.toString() ??
+                                  '',
                               isResponse1: true,
-                              widget: Text(pl2?.startXI![i].player?.name ?? ''),
+                              widget: Text(
+                                  pl2?.startXI![i].player?.number.toString() ??
+                                      ''),
                               bottom: 135,
                               left: 50),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '3:2')
                           PlayerPositioned(
+                              name: pl2?.startXI![i].player?.name.toString() ??
+                                  '',
                               isResponse1: true,
-                              widget: Text(pl2?.startXI![i].player?.name ?? ''),
+                              widget: Text(
+                                  pl2?.startXI![i].player?.number.toString() ??
+                                      ''),
                               bottom: 135,
                               left: 120),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '3:3')
                           PlayerPositioned(
+                              name: pl2?.startXI![i].player?.name.toString() ??
+                                  '',
                               isResponse1: true,
-                              widget: Text(pl2?.startXI![i].player?.name ?? ''),
+                              widget: Text(
+                                  pl2?.startXI![i].player?.number.toString() ??
+                                      ''),
                               bottom: 135,
                               left: 200),
                       for (var i = 4; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '3:4')
                           PlayerPositioned(
+                              name: pl2?.startXI![i].player?.name.toString() ??
+                                  '',
                               isResponse1: true,
-                              widget: Text(pl2?.startXI![i].player?.name ?? ''),
+                              widget: Text(
+                                  pl2?.startXI![i].player?.number.toString() ??
+                                      ''),
                               bottom: 135,
                               left: 265),
                       for (var i = 4; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '3:5')
                           PlayerPositioned(
+                              name: pl2?.startXI![i].player?.name.toString() ??
+                                  '',
                               isResponse1: true,
-                              widget: Text(pl2?.startXI![i].player?.name ?? ''),
+                              widget: Text(
+                                  pl2?.startXI![i].player?.number.toString() ??
+                                      ''),
                               bottom: 135,
                               left: 320),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '4:1')
                           PlayerPositioned(
+                              name: pl2?.startXI![i].player?.name.toString() ??
+                                  '',
                               isResponse1: true,
-                              widget: Text(pl2?.startXI![i].player?.name ?? ''),
+                              widget: Text(
+                                  pl2?.startXI![i].player?.number.toString() ??
+                                      ''),
                               bottom: 190,
                               left: 100),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '4:2')
                           PlayerPositioned(
+                              name: pl2?.startXI![i].player?.name.toString() ??
+                                  '',
                               isResponse1: true,
-                              widget: Text(pl2?.startXI![i].player?.name ?? ''),
+                              widget: Text(
+                                  pl2?.startXI![i].player?.number.toString() ??
+                                      ''),
                               bottom: 190,
                               left: 165),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '4:3')
                           PlayerPositioned(
+                              name: pl2?.startXI![i].player?.name.toString() ??
+                                  '',
                               isResponse1: true,
-                              widget: Text(pl2?.startXI![i].player?.name ?? ''),
+                              widget: Text(
+                                  pl2?.startXI![i].player?.number.toString() ??
+                                      ''),
                               bottom: 190,
                               left: 245),
                       for (var i = 5; i < 11; i++)
                         if (pl2?.startXI![i].player?.grid == '5:1')
                           PlayerPositioned(
+                              name: pl2?.startXI![i].player?.name.toString() ??
+                                  '',
                               isResponse1: true,
-                              widget: Text(pl2?.startXI![i].player?.name ?? ''),
+                              widget: Text(
+                                  pl2?.startXI![i].player?.number.toString() ??
+                                      ''),
                               bottom: 235,
                               left: width / 2.3),
                       Positioned(
@@ -515,11 +625,13 @@ class PlayerPositioned extends StatelessWidget {
   const PlayerPositioned({
     Key? key,
     required this.widget,
+    required this.name,
     required this.bottom,
     required this.isResponse1,
     required this.left,
   }) : super(key: key);
   final Widget widget;
+  final String name;
   final double left;
   final double bottom;
   final bool isResponse1;
@@ -530,14 +642,30 @@ class PlayerPositioned extends StatelessWidget {
       top: isResponse1 ? bottom : null,
       bottom: isResponse1 ? null : bottom,
       duration: const Duration(milliseconds: 1500),
-      child: Container(
-        padding: const EdgeInsets.all(8),
-        decoration: BoxDecoration(
-            color: isResponse1 ? softPeach : lightBlue,
-            borderRadius: BorderRadius.circular(50)),
-        width: 48,
-        height: 46,
-        child: widget,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: [
+          Container(
+            alignment: Alignment.center,
+            padding: const EdgeInsets.all(4),
+            decoration: BoxDecoration(
+                color: isResponse1 ? softPeach : lightBlue,
+                borderRadius: BorderRadius.circular(50)),
+            width: 27,
+            height: 27,
+            child: widget,
+          ),
+          Container(
+            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 20),
+            decoration: BoxDecoration(
+                color: white, borderRadius: BorderRadius.circular(10)),
+            padding: const EdgeInsets.symmetric(horizontal: 2, vertical: 1),
+            child: Text(
+              name,
+              style: greyCText(font: 9.0),
+            ),
+          ),
+        ],
       ),
     );
   }
