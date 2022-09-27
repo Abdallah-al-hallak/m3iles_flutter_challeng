@@ -8,6 +8,7 @@ import 'package:m3iles_flutter_challeng/data/model/fixtures_model.dart';
 import 'package:m3iles_flutter_challeng/home/view/styles/styles.dart';
 
 import '../blocs/bloc/fixtures_bloc.dart';
+import 'widget/grid_web_view.dart';
 import 'widget/match_cards.dart';
 
 class HomePage extends StatelessWidget {
@@ -149,38 +150,6 @@ class _MatchTbdViewState extends State<MatchTbdView> {
             fixturesFaild: (v) => const Center(
                   child: Text('Failed to load'),
                 ));
-      },
-    );
-  }
-}
-
-class GridViewWeb extends StatelessWidget {
-  const GridViewWeb({Key? key, required this.response}) : super(key: key);
-  final List<Response> response;
-  @override
-  Widget build(BuildContext context) {
-    return GridView.builder(
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        crossAxisSpacing: 10,
-      ),
-      itemCount: response.length,
-      itemBuilder: (BuildContext context, int index) {
-        return SizedBox(
-          height: 100,
-          child: Card(
-            child: Padding(
-              padding: const EdgeInsets.all(25),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Text(response[index].teams?.home?.name ?? ''),
-                  Text(response[index].teams?.away?.name ?? '')
-                ],
-              ),
-            ),
-          ),
-        );
       },
     );
   }
