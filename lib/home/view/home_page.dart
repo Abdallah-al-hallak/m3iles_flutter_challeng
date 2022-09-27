@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'dart:ui';
 import 'package:intl/intl.dart';
 import 'package:flutter/material.dart';
@@ -70,7 +71,10 @@ class _MatchFinishedViewState extends State<MatchFinishedView> {
             // bloc states with freezed to have the best performance
             fixturesLoaded: (fixturesData) =>
                 LayoutBuilder(builder: (context, constraints) {
-                  //TODO brakpoints
+                  if (constraints.maxWidth > 505) {
+                    return GridViewWeb(
+                        response: fixturesData.fixtures.response);
+                  }
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: ListView.separated(
@@ -120,6 +124,11 @@ class _MatchTbdViewState extends State<MatchTbdView> {
               fixturesData,
             ) =>
                 LayoutBuilder(builder: (context, constraints) {
+                  print(constraints.maxWidth);
+                  if (constraints.maxWidth > 505) {
+                    return GridViewWeb(
+                        response: fixturesData.fixturesTbd.response);
+                  }
                   //TODO brakpoints
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -140,6 +149,38 @@ class _MatchTbdViewState extends State<MatchTbdView> {
             fixturesFaild: (v) => const Center(
                   child: Text('Failed to load'),
                 ));
+      },
+    );
+  }
+}
+
+class GridViewWeb extends StatelessWidget {
+  const GridViewWeb({Key? key, required this.response}) : super(key: key);
+  final List<Response> response;
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        crossAxisSpacing: 10,
+      ),
+      itemCount: response.length,
+      itemBuilder: (BuildContext context, int index) {
+        return SizedBox(
+          height: 100,
+          child: Card(
+            child: Padding(
+              padding: const EdgeInsets.all(25),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Text(response[index].teams?.home?.name ?? ''),
+                  Text(response[index].teams?.away?.name ?? '')
+                ],
+              ),
+            ),
+          ),
+        );
       },
     );
   }
